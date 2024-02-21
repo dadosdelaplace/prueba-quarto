@@ -58,3 +58,12 @@ ggplot(starwars) +
              alpha = 0.7) + 
   theme_minimal()
 ```
+
+---
+
+## Nueva diapo
+
+```{r}
+x <- 1
+```
+
