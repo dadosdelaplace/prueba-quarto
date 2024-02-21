@@ -1,0 +1,60 @@
+---
+title: "Prueba diapos"
+author: "javi"
+editor: visual
+title-slide-attributes:
+  data-background-image: grafica.png
+  data-background-size: cover
+  data-background-opacity: "0.2"
+format: 
+  revealjs:
+    multiplex: true
+    menu:
+      side: left
+      width: normal
+    footer: "[<strong>Javier Álvarez Liébana</strong>](...) • Grado en Ciencia de Datos Aplicada (UCM) • curso 2023-2024"
+    slide-number: c/t
+execute:
+  echo: true
+embed-resources: true
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+---
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+---
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+. . .
+
+dasd asdas d
+
+---
+
+## Visualización
+
+```{r}
+#| code-fold: true
+library(tidyverse)
+ggplot(starwars) +
+  geom_point(aes(x = mass, y = height, color = sex), size = 4,
+             alpha = 0.7) + 
+  theme_minimal()
+```
